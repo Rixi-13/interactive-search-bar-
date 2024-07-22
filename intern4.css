@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("https://img.freepik.com/free-vector/bokeh-effect-screensaver-gradient-style_23-2148362902.jpg?t=st=1721490676~exp=1721494276~hmac=b1b375d12f23755210ef30cfd490a4a537c0ff90ecca7f226d2ced43d20ae44d&w=1060");
+    background-color: #e6afd8;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+.content {
+    position: fixed;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 2px;
+}
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #2b2e31;
+    background-image: linear-gradient(to bottom left, #111313,#111313,#293030, #502214, #6b4030, #5a5042,#6b4030, #502214,#293030,#111313, #111313);
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-image 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #01060a;
+    background-image: linear-gradient(to bottom left, #111313,#111313,#293030,#171450, #274761, #3d4157,#274761, #171450,#293030,#111313, #111313);
+}
+ 
+.arrow {
+    transition: transform 0.3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 220px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    border-radius: 14px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 14px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #8eb3c5;
+}
+
+#searchInput {
+    padding: 12px;
+    border: none;
+    width: 400px;
+    border-radius: 25px;
+    outline: none;
+    margin-left: 10px;
+}
+
+input[type="search"]::placeholder {
+    color: #3a3d3f;
+    font-size: 16px;
+}
+
+.icon-btn {
+    background-color: #dcb1f8;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.icon-btn:hover {
+    background-color: #ba85fb;
+}
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+.search-icon {
+    color: white;
+    font-size: 18px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
